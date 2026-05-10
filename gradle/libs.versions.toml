@@ -1,29 +1,19 @@
 [versions]
-bukkit="1.21.10-R0.1-SNAPSHOT"
-minecraft="1.21.10"
-
-# https://fabricmc.net/develop/
-fabricApi="0.135.0+1.21.10"
-fabricLoader="0.17.3"
-fabricLoom="1.11-SNAPSHOT"
-
-#forge="1.20.2-48.0.6"
-#forgeGradle="[6.0,6.2)"
-#forgeLoader="[48,)"
+bukkit="26.1.2.build.+"
+minecraft="26.1.2"
 
 minotaur="2.+" # https://github.com/modrinth/minotaur
-paperweight="2.0.0-beta.19" # https://github.com/PaperMC/Paperweight
+paperweight="2.0.0-beta.21" # https://github.com/PaperMC/Paperweight
 run-paper="3.0.2" # https://github.com/jpenilla/run-task
-indra-git="3.2.0" # https://github.com/KyoriPowered/indra
-shadowJar="8.3.9" # https://github.com/GradleUp/shadow
+indra-git="4.0.0" # https://github.com/KyoriPowered/indra
+shadowJar="9.4.1" # https://github.com/GradleUp/shadow
 
-adventure="4.26.0-SNAPSHOT" # https://github.com/KyoriPowered/adventure
+adventure="5.0.1" # https://github.com/KyoriPowered/adventure
 adventureBukkit="4.4.1" # https://github.com/KyoriPowered/adventure-platform
-adventureFabric="6.7.0" # https://github.com/KyoriPowered/adventure-platform-fabric
 
 cloud="2.0.0" # https://github.com/incendo/cloud
-cloud-minecraft="2.0.0-beta.13" # https://github.com/Incendo/cloud-minecraft
-cloud-minecraft-modded="2.0.0-beta.13" # https://github.com/Incendo/cloud-minecraft-modded
+cloud-minecraft="2.0.0-beta.15" # https://github.com/Incendo/cloud-minecraft
+cloud-minecraft-modded="2.0.0-beta.16" # https://github.com/Incendo/cloud-minecraft-modded
 cloud-processors="1.0.0-rc.1" # https://github.com/Incendo/cloud-processors
 
 caffeine="3.2.2" # https://github.com/ben-manes/caffeine
@@ -43,7 +33,6 @@ undertow="2.3.20.Final" # https://github.com/undertow-io/undertow
 [plugins]
 minotaur = { id = "com.modrinth.minotaur", version.ref = "minotaur" }
 shadow = { id = "com.gradleup.shadow", version.ref = "shadowJar" }
-fabric-loom = { id = "fabric-loom", version.ref = "fabricLoom" }
 indra-git = { id = "net.kyori.indra.git", version.ref = "indra-git" }
 paperweight-userdev = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
 run-paper = { id = "xyz.jpenilla.run-paper", version.ref = "run-paper" }
@@ -58,14 +47,10 @@ jspecifyAnnotations = { group = "org.jspecify", name = "jspecify", version = "1.
 
 undertow = { group = "io.undertow", name = "undertow-core", version.ref = "undertow" }
 
-fabric-loader = { group = "net.fabricmc", name = "fabric-loader", version.ref = "fabricLoader" }
-fabric-api = { group = "net.fabricmc.fabric-api", name = "fabric-api", version.ref = "fabricApi" }
-
 cloudCore = { group = "org.incendo", name = "cloud-core", version.ref = "cloud" }
 cloudBrigadier = { group = "org.incendo", name = "cloud-brigadier", version.ref = "cloud-minecraft" }
 cloudPaper = { group = "org.incendo", name = "cloud-paper", version.ref = "cloud-minecraft" }
 cloudMinecraftExtras = { group = "org.incendo", name = "cloud-minecraft-extras", version.ref = "cloud-minecraft" }
-cloudFabric = { group = "org.incendo", name = "cloud-fabric", version.ref = "cloud-minecraft-modded" }
 cloudProcessorsConfirmation = { group = "org.incendo", name = "cloud-processors-confirmation", version.ref = "cloud-processors" }
 
 adventureApi = { group = "net.kyori", name = "adventure-api", version.ref = "adventure" }
@@ -74,8 +59,6 @@ adventureTextSerializerPlain = { group = "net.kyori", name = "adventure-text-ser
 
 adventurePlatformFacet = { group = "net.kyori", name = "adventure-platform-facet", version.ref = "adventureBukkit" }
 adventurePlatformBukkit = { group = "net.kyori", name = "adventure-platform-bukkit", version.ref = "adventureBukkit" }
-adventurePlatformFabric = { group = "net.kyori", name = "adventure-platform-fabric", version.ref = "adventureFabric" }
-
 
 caffeine = { group = "com.github.ben-manes.caffeine", name = "caffeine", version.ref = "caffeine" }
 querzNbt = { group = "com.github.Querz", name = "NBT", version.ref = "querzNbt" }
